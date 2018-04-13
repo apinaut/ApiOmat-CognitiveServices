@@ -41,7 +41,7 @@ import com.apiomat.nativemodule.basics.*;
     requiredUserRoleWrite=com.apiomat.nativemodule.UserRole.Owner, restrictResourceAccess=false,
     allowedRolesCreate={}, allowedRolesRead={},
     allowedRolesWrite={}, allowedRolesGrant={})
-public class ObjectPicture extends com.apiomat.nativemodule.AbstractClientDataModel implements com.apiomat.nativemodule.IModel<com.apiomat.nativemodule.cognitiveservices.ObjectPicture>
+public class ObjectPicture extends com.apiomat.nativemodule.AbstractClientDataModel<com.apiomat.nativemodule.cognitiveservices.ObjectPicture> implements com.apiomat.nativemodule.IModel<com.apiomat.nativemodule.cognitiveservices.ObjectPicture>
 {
     /**
      * Contains the name of the module that this model belongs to

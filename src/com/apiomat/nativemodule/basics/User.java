@@ -35,7 +35,7 @@ import com.apiomat.nativemodule.basics.*;
 */
 @java.lang.SuppressWarnings( "unused" )
 @com.apiomat.nativemodule.Model( moduleName = "Basics" )
-public class User extends com.apiomat.nativemodule.AbstractClientDataModel implements com.apiomat.nativemodule.IModel<com.apiomat.nativemodule.basics.User>
+public class User extends com.apiomat.nativemodule.AbstractClientDataModel<com.apiomat.nativemodule.basics.User> implements com.apiomat.nativemodule.IModel<com.apiomat.nativemodule.basics.User>
 {
     /**
      * Contains the name of the module that this model belongs to

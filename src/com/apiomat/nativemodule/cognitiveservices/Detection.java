@@ -41,7 +41,7 @@ import com.apiomat.nativemodule.basics.*;
     requiredUserRoleWrite=com.apiomat.nativemodule.UserRole.Guest, restrictResourceAccess=false,
     allowedRolesCreate={}, allowedRolesRead={},
     allowedRolesWrite={}, allowedRolesGrant={})
-public class Detection extends com.apiomat.nativemodule.AbstractClientDataModel implements com.apiomat.nativemodule.IModel<com.apiomat.nativemodule.cognitiveservices.Detection>
+public class Detection extends com.apiomat.nativemodule.AbstractClientDataModel<com.apiomat.nativemodule.cognitiveservices.Detection> implements com.apiomat.nativemodule.IModel<com.apiomat.nativemodule.cognitiveservices.Detection>
 {
     /**
      * Contains the name of the module that this model belongs to
