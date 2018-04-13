@@ -5,7 +5,7 @@
     -->
 
 	<loadproperties srcFile="sdk.properties" />
-
+	<property file="${user.home}/apiomat/apiomat.properties"/>
 	<!-- set global properties for this build -->
 	<property name="src" location="src" />
 	<property name="lib" location="lib" />
@@ -75,6 +75,8 @@
 		<mkdir dir="./tmp" />
 
 		<copy tofile="./tmp/sdk.properties" file="sdk.properties" overwrite="true" />
+		<copy tofile="./tmp/readme.md" file="readme.md" overwrite="true" />
+		<copy tofile="./tmp/.gitignore" file=".gitignore" />
 		<copy todir="./tmp" overwrite="true">
 			<fileset dir="${src}">
 				<include name="**/*Hooks.java" />
@@ -86,6 +88,8 @@
 		</copy>
 		<unzip dest="." src="./nm.zip" overwrite="true" />
 		<copy file="./tmp/sdk.properties" tofile="sdk.properties" overwrite="true" />
+		<copy file="./tmp/readme.md" tofile="readme.md" overwrite="true" />
+		<copy file="./tmp/.gitignore" tofile=".gitignore" overwrite="true" />
 		<copy todir="${src}" overwrite="true">
 			<fileset dir="./tmp">
 				<include name="**/RestClass.java" />
